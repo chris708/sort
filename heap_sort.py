@@ -1,3 +1,5 @@
+import time 
+begin = time.time() 
 from swap import swap
 
 def heap_sort(s):
@@ -31,4 +33,10 @@ def sift_down(s,start,end):
             swap(s,root,child)
             root = child
         else: return 
+        time.sleep(1) 
+
+end = time.time() 
+  
+
+print(f"Total runtime of the program is {end - begin}") 
         
